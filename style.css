@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+
+@import url("fff-forward.regular.ttf");
+
+body {
+    background-color: #222;
+    background: linear-gradient(69deg, #222 0%, rgba(148,148,255,1) 69%, rgba(0,212,255,1) 100%);
+    background-attachment: fixed;
+    color: white;
+    font-family: "Handjet";
+    margin: 0;
+}
+
+p, span {
+    line-height: 1.8em;
+}
+
+nav {
+    padding: 20px;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    /* position: fixed; */
+}
+nav a {
+    color: #fff;
+    margin: 15px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    transition: 180ms;
+}
+nav a:hover {
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+section {
+    padding: 69px;
+}
+td {
+    padding: 20px;
+}
+.light {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+h1 {
+    font-size: 69px;
+    font-weight: lighter;
+    letter-spacing: 7px;
+    font-family: "Rubik Pixels";
+}
+
+h2, h3, h4, h5 {
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+    td {
+        display: block;
+    }
+}
