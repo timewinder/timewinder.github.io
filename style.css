@@ -38,11 +38,21 @@ section {
     padding: 69px;
 }
 td {
+    vertical-align: top;
     padding: 20px;
 }
 .light {
     background: rgba(255, 255, 255, 0.8);
     color: #000;
+}
+
+button {
+    padding: 22px;
+    font-family: "Handjet";
+    font-size: 17px;
+    cursor: pointer;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 h1 {
@@ -60,6 +70,9 @@ h2, h3, h4, h5 {
     h1 {
         font-size: 35px;
         letter-spacing: 5px;
+    }
+    section {
+        padding: 40px;
     }
     td {
         display: block;
