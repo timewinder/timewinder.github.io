@@ -5,14 +5,15 @@
 
 body {
     background-color: #222;
-    background: linear-gradient(69deg, #222 0%, rgba(148,148,255,1) 69%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(69deg, #222 0%, rgba(148, 148, 255, 1) 69%, rgba(0, 212, 255, 1) 100%);
     background-attachment: fixed;
     color: white;
     font-family: "Handjet";
     margin: 0;
 }
 
-p, span {
+p,
+span {
     line-height: 1.8em;
 }
 
@@ -22,6 +23,7 @@ nav {
     -webkit-backdrop-filter: blur(7px);
     /* position: fixed; */
 }
+
 nav a {
     color: #fff;
     margin: 15px;
@@ -29,6 +31,7 @@ nav a {
     letter-spacing: 3px;
     transition: 180ms;
 }
+
 nav a:hover {
     letter-spacing: 5px;
     font-weight: bold;
@@ -37,10 +40,12 @@ nav a:hover {
 section {
     padding: 69px;
 }
+
 td {
     vertical-align: top;
     padding: 20px;
 }
+
 .light {
     background: rgba(255, 255, 255, 0.8);
     color: #000;
@@ -62,8 +67,25 @@ h1 {
     font-family: "Rubik Pixels";
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
     letter-spacing: 3px;
+}
+
+.itch {
+    background-color: #864040;
+}
+
+.games {
+    width: calc(100% / 3 - 3px);
+    margin: 0px;
+    vertical-align: top;
+    display: inline-block;
+    padding: 50px;
+    box-sizing: border-box;
+    height: 450px;
 }
 
 @media screen and (max-width: 600px) {
@@ -71,14 +93,17 @@ h2, h3, h4, h5 {
         font-size: 35px;
         letter-spacing: 5px;
     }
+
     section {
         padding: 40px;
     }
+
     td {
         display: block;
     }
-}
 
-.itch {
-    background-color: #864040;
+    .games {
+        width: 100%;
+        height: fit-content;
+    }
 }
