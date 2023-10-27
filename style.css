@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
 
-@import url("fff-forward.regular.ttf");
+@keyframes move-bg {
+    0% { background-position: 0px -30vh; }
+    100% { background-position: 0px 130vh; }
+}
 
 body {
     background-color: #222;
-    background: linear-gradient(69deg, #222 0%, rgba(148, 148, 255, 1) 69%, rgba(0, 212, 255, 1) 100%);
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+    /* background-repeat: no-repeat; */
+    background-size: 500px;
+    animation: move-bg 0.5s steps(10, start) infinite;
+    /* background: linear-gradient(69deg, #222 0%, rgba(148, 148, 255, 1) 69%, rgba(0, 212, 255, 1) 100%); */
     background-attachment: fixed;
     color: white;
-    font-family: "Handjet";
+    font-family: "Pixelify Sans";
     margin: 0;
 }
 
@@ -53,7 +61,7 @@ td {
 
 button {
     padding: 22px;
-    font-family: "Handjet";
+    font-family: "Pixelify Sans";
     font-size: 17px;
     cursor: pointer;
     color: #fff;
@@ -62,9 +70,9 @@ button {
 
 h1 {
     font-size: 69px;
-    font-weight: lighter;
+    font-weight: 700;
     letter-spacing: 7px;
-    font-family: "Rubik Pixels";
+    /* font-family: "Rubik Pixels"; */
 }
 
 h2,
@@ -79,7 +87,12 @@ h5 {
 }
 
 .games {
+    image-rendering: optimizeSpeed !important;
     width: calc(100% / 3 - 3px);
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    backdrop-filter: blur(2px);
     margin: 0px;
     vertical-align: top;
     display: inline-block;
