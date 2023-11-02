@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
 
 @keyframes move-bg {
-    0% { background-position: 0px -30vh; }
-    100% { background-position: 0px 130vh; }
+    0% { background-position: 0px 0px; }
+    100% { background-position: 0px 300px; }
 }
 
 body {
@@ -12,12 +12,23 @@ body {
     background-image: url("background.png");
     /* background-repeat: no-repeat; */
     background-size: 300px;
-    animation: move-bg 4s steps(500, start) infinite;
+    animation: move-bg 1s steps(500, start) infinite;
     /* background: linear-gradient(69deg, #222 0%, rgba(148, 148, 255, 1) 69%, rgba(0, 212, 255, 1) 100%); */
     background-attachment: fixed;
     color: white;
     font-family: "Pixelify Sans";
     margin: 0;
+}
+
+a {
+    color: #28c9ff !important;
+    text-decoration: none;
+    transition: 180ms;
+}
+a:hover {
+    background: #333;
+    color: #fff !important;
+    text-decoration: wavy underline;
 }
 
 p,
