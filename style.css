@@ -21,7 +21,7 @@ body {
 }
 
 a {
-    color: #28c9ff !important;
+    color: #28c9ff;
     text-decoration: none;
     transition: 180ms;
 }
@@ -44,7 +44,7 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #fff !important;
     margin: 15px;
     text-decoration: none;
     letter-spacing: 3px;
