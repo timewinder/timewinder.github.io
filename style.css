@@ -9,10 +9,10 @@
 
 body {
     background-color: #222;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+    background-image: url("background.png");
     /* background-repeat: no-repeat; */
-    background-size: 500px;
-    animation: move-bg 0.5s steps(10, start) infinite;
+    background-size: 300px;
+    animation: move-bg 4s steps(500, start) infinite;
     /* background: linear-gradient(69deg, #222 0%, rgba(148, 148, 255, 1) 69%, rgba(0, 212, 255, 1) 100%); */
     background-attachment: fixed;
     color: white;
@@ -99,6 +99,12 @@ h5 {
     padding: 50px;
     box-sizing: border-box;
     height: 450px;
+}
+.announcement {
+    background: #ffd559;
+    border: 3px solid #ff9900;
+    color: #333;
+    padding: 15px;
 }
 
 @media screen and (max-width: 600px) {
