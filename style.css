@@ -126,7 +126,7 @@ h5 {
 
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: 35px;
+        font-size: 45px;
         letter-spacing: 5px;
     }
 
@@ -141,5 +141,11 @@ h5 {
     .games {
         width: 100%;
         height: fit-content;
+    }
+
+    #landing {
+        height: 100vh;
+        padding-top: 20vh;
+        box-sizing: border-box;
     }
 }
