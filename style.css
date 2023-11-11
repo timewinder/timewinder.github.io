@@ -18,6 +18,7 @@ body {
     color: white;
     font-family: "Pixelify Sans";
     margin: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -126,7 +127,7 @@ h5 {
     padding: 50px;
     box-sizing: border-box;
     height: 450px; */
-    padding: 50px;
+    padding: 60px;
 }
 .announcement {
     background: #ffd559;
@@ -154,10 +155,9 @@ h5 {
         display: block;
     }
 
-    /* .games {
-        width: 100%;
-        height: fit-content;
-    } */
+    .games {
+        padding: 50px;
+    }
 
     #landing {
         height: 100vh;
